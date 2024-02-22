@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './Components/NavBar';
+import Home from './Pages/Home';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="header-section">
+          <img src="https://w7.pngwing.com/pngs/713/936/png-transparent-online-shopping-shopping-cart-logo-e-commerce-market-blue-angle-company.png"
+            alt="logo" width="50px" height="50px" />
+          <h1>E-commerce Website</h1>
+        </div>
       </header>
+
+      <NavBar />
+
+      <section>
+        <Home />
+      </section>
+
+      <footer>
+        <p>&copy; 2024 Your E-commerce Site. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
